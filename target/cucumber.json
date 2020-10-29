@@ -1,0 +1,193 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-10-29T00:20:33.096Z",
+        "line": 10,
+        "name": "Search for items and validate results",
+        "description": "",
+        "id": "search-and-place-order-for-vegetable;search-for-items-and-validate-results;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 242860500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinations.Hooks.afterSeleniumValidation()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6892643400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on GreenKart Landing page",
+            "match": {
+              "location": "stepDefinations.seleniumStepDefination.user_is_on_greenkart_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3674778000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User search for vegetable Cucumber Vegetable",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Cucumber",
+                  "offset": 26
+                }
+              ],
+              "location": "stepDefinations.seleniumStepDefination.user_search_for_vegetable_vegetable(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 36981200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Cucumber results are displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Cucumber",
+                  "offset": 0
+                }
+              ],
+              "location": "stepDefinations.seleniumStepDefination.results_are_displayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Sel"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-10-29T00:20:44.085Z",
+        "line": 22,
+        "name": "Search for items then move to checkout page",
+        "description": "",
+        "id": "search-and-place-order-for-vegetable;search-for-items-then-move-to-checkout-page;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 206882100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinations.Hooks.afterSeleniumValidation()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7053810600,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User is on GreenKart Landing page",
+            "match": {
+              "location": "stepDefinations.seleniumStepDefination.user_is_on_greenkart_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3328459800,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User search for vegetable Cucumber Vegetable",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Cucumber",
+                  "offset": 26
+                }
+              ],
+              "location": "stepDefinations.seleniumStepDefination.user_search_for_vegetable_vegetable(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 358793400,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Added 2 items to cart",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 6
+                }
+              ],
+              "location": "stepDefinations.seleniumStepDefination.added_items_to_cart(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 268846700,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User proceeded to Checkout page to purchase",
+            "match": {
+              "location": "stepDefinations.seleniumStepDefination.user_proceeded_to_checkout_page_to_purchase()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 53967500,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Verify selected Cucumber are displayed in Check out page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Cucumber",
+                  "offset": 16
+                }
+              ],
+              "location": "stepDefinations.seleniumStepDefination.verify_selected_are_displayed_in_check_out_page(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Sel"
+          }
+        ]
+      }
+    ],
+    "name": "Search and place order for Vegetable",
+    "description": "",
+    "id": "search-and-place-order-for-vegetable",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/search.feature",
+    "tags": []
+  }
+]
